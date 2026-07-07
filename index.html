@@ -1,17 +1,314 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/output.css">
-</head>
-<body>
-    <div class="container min-w-0">
-        <div class="hey text-green-950 bg-sky-300">
-            Hellllooooo
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home/x</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body class="bg-black text-white">
+    <div class="container flex w-full mx-auto">
+      <header class="w-[20%]">
+        <!-- left section -->
+        <nav class="sidebar flex flex-col mr-10 fixed">
+          <div class="logo invert w-1/2 py-4 pl-3">
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"
+            >
+              <g>
+                <path
+                  d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+
+          <ul class="text-xl space-y-5 flex flex-col">
+            <li
+              class="flex justify-start item hover:bg-gray-900 py-1 gap-3 w-fit font-semibold active:font-bold hover:rounded-full pl-1 pr-4 hover:cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-3xl px-2">
+                home
+              </span>
+              Home
+            </li>
+            <li
+              class="flex justify-start item hover:bg-gray-900 py-1 gap-3 w-fit font-semibold active:font-bold hover:rounded-full pl-1 pr-4 hover:cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-3xl px-2 pr-2">
+                search
+              </span>
+              Explore
+            </li>
+            <li
+              class="flex justify-start item hover:bg-gray-900 py-1 gap-3 w-fit font-semibold active:font-bold hover:rounded-full pl-1 pr-4 hover:cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-3xl px-2 pr-2">
+                notifications </span
+              >Notifications
+            </li>
+            <li
+              class="flex justify-start item hover:bg-gray-900 py-1 gap-3 w-fit font-semibold active:font-bold hover:rounded-full pl-1 pr-4 hover:cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-3xl px-2 pr-2">
+                mail </span
+              >Messages
+            </li>
+            <li
+              class="flex justify-start item hover:bg-gray-900 py-1 gap-3 w-fit font-semibold active:font-bold hover:rounded-full pl-1 pr-4 hover:cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-3xl px-2 pr-2">
+                chat </span
+              >Chat
+            </li>
+            <li
+              class="flex justify-start item hover:bg-gray-900 py-1 gap-3 w-fit font-semibold active:font-bold hover:rounded-full pl-1 pr-4 hover:cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-3xl px-2 pr-2">
+                add </span
+              >Grok
+            </li>
+            <li
+              class="flex justify-start item hover:bg-gray-900 py-1 gap-3 w-fit font-semibold active:font-bold hover:rounded-full pl-1 pr-4 hover:cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-3xl px-2 pr-2">
+                person </span
+              >Profile
+            </li>
+            <li
+              class="flex justify-start item hover:bg-gray-900 py-1 gap-3 w-fit font-semibold active:font-bold hover:rounded-full pl-1 pr-4 hover:cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-3xl px-2 pr-2">
+                more </span
+              >More
+            </li>
+          </ul>
+          <button
+            class="post text-black bg-white font-semibold text-xl rounded-full px-4 py-2 my-4 hover:bg-orange-50"
+          >
+            Post
+          </button>
+          <div
+            class="item hover:bg-gray-900 w-full py-4 rounded-full cursor-pointer flex justify-between"
+          >
+            <div class="flex justify-between gap-3">
+              <img
+                class="w-[40px] h-[40px] rounded-full"
+                src="/Normal pfp🎀.jpg"
+                alt="empty profile picture"
+              />
+              <div>
+                <div class="topic font-semibold">Farha Shaikh</div>
+                <div class="niche text-sm text-gray-500">@farhashaikh</div>
+              </div>
+            </div>
+            <span
+              class="material-symbols-outlined text-lg px-1 h-[26px] w-[26px] text-gray-500 hover:text-blue-500 hover:bg-blue-950 rounded-full"
+            >
+              more_horiz
+            </span>
+          </div>
+        </nav>
+      </header>
+
+      <!-- middle section -->
+      <main class="flex w-[80%]">
+        <div class="mid-section border border-x-gray-500 border-y-black w-3/5">
+          mid-section
         </div>
+
+        <!-- right section -->
+        <div class="right-side w-2/5 flex flex-col gap-4 pt-4 pl-10 pb-16">
+          <!-- search bar -->
+          <div class="search">
+            <input
+              type="text"
+              class="w-[90%] rounded-full p-2 bg-black px-4 border-2 border-gray-500 focus:border-blue-500 focus:outline-none"
+              placeholder="Search"
+            />
+          </div>
+
+          <!-- what's happening -->
+          <div
+            class="whats-happening text-white border border-gray-500 rounded-3xl w-[90%] flex flex-wrap pt-3"
+          >
+            <h1 class="font-bold pb-3 px-4">What's happening</h1>
+            <div class="item hover:bg-gray-900 w-full py-4 cursor-pointer px-4">
+              <div class="niche text-sm text-gray-500 flex justify-between">
+                Business and Finance | Trending
+                <div>
+                  <span
+                    class="material-symbols-outlined text-lg px-1 text-gray-500 hover:text-blue-500 hover:bg-blue-950 rounded-full"
+                  >
+                    more_horiz
+                  </span>
+                </div>
+              </div>
+
+              <div class="topic font-semibold">#BestTimeToBuyS25Ultra</div>
+            </div>
+            <div class="item hover:bg-gray-900 w-full py-4 cursor-pointer px-4">
+              <div class="niche text-sm text-gray-500 flex justify-between">
+                Sports | Trending
+                <div>
+                  <span
+                    class="material-symbols-outlined text-lg px-1 text-gray-500 hover:text-blue-500 hover:bg-blue-950 rounded-full"
+                  >
+                    more_horiz
+                  </span>
+                </div>
+              </div>
+              <div class="topic font-semibold">Gujrat ATS</div>
+            </div>
+            <div class="item hover:bg-gray-900 w-full py-4 cursor-pointer px-4">
+              <div class="niche text-sm text-gray-500 flex justify-between">
+                Trending in India
+                <div>
+                  <span
+                    class="material-symbols-outlined text-lg px-1 text-gray-500 hover:text-blue-500 hover:bg-blue-950 rounded-full"
+                  >
+                    more_horiz
+                  </span>
+                </div>
+              </div>
+              <div class="topic font-semibold">#Nagabandham</div>
+            </div>
+            <h2
+              class="show-more px-4 hover:bg-gray-900 rounded-b-3xl w-full py-4 text-blue-500 cursor-pointer"
+            >
+              Show More
+            </h2>
+          </div>
+
+          <!-- who to follow -->
+          <div
+            class="who-to-follow text-white border border-gray-500 rounded-3xl w-[90%] flex flex-wrap pt-3"
+          >
+            <h1 class="font-bold pb-3 px-4">Who to follow</h1>
+            <div
+              class="item hover:bg-gray-900 w-full py-4 cursor-pointer flex items-center justify-between px-4"
+            >
+              <div class="flex items-center justify-between gap-3">
+                <img
+                  class="w-[40px] h-[40px] rounded-full"
+                  src="dragonball-tenkaichi-daibouken_400x400.jpg"
+                  alt="empty profile picture"
+                />
+                <div>
+                  <div class="topic font-semibold hover:underline decoration-1">
+                    Elad Gil
+                  </div>
+                  <div class="niche text-sm text-gray-500">@eladgil</div>
+                </div>
+              </div>
+              <button
+                class="follow text-black bg-white font-semibold text-base px-4 py-2 rounded-full hover:bg-orange-50"
+              >
+                Follow
+              </button>
+            </div>
+
+            <div
+              class="item hover:bg-gray-900 w-full py-4 cursor-pointer flex items-center justify-between px-4"
+            >
+              <div class="flex items-center justify-between gap-3">
+                <img
+                  class="w-[40px] h-[40px] rounded-full"
+                  src="gardenOfColors.jpg"
+                  alt="empty profile picture"
+                />
+                <div>
+                  <div class="topic font-semibold hover:underline decoration-1">
+                    Garden
+                  </div>
+                  <div class="niche text-sm text-gray-500">@gardenofcolors</div>
+                </div>
+              </div>
+              <button
+                class="follow text-black bg-white font-semibold text-base px-4 py-2 rounded-full hover:bg-orange-50"
+              >
+                Follow
+              </button>
+            </div>
+
+            <div
+              class="item hover:bg-gray-900 w-full py-4 cursor-pointer flex items-center justify-between px-4"
+            >
+              <div class="flex items-center justify-between gap-3">
+                <img
+                  class="w-[40px] h-[40px] rounded-full"
+                  src="jdb.jpg"
+                  alt="empty profile picture"
+                />
+                <div>
+                  <div class="topic font-semibold hover:underline decoration-1">
+                    Greg Brockman
+                  </div>
+                  <div class="niche text-sm text-gray-500">@gdb</div>
+                </div>
+              </div>
+              <button
+                class="follow text-black bg-white font-semibold text-base px-4 py-2 rounded-full hover:bg-orange-50"
+              >
+                Follow
+              </button>
+            </div>
+            <h2
+              class="show-more px-4 hover:bg-gray-900 rounded-b-3xl w-full py-4 text-blue-500 cursor-pointer"
+            >
+              Show More
+            </h2>
+          </div>
+
+          <!-- links -->
+          <div class="links px-4 w-[90%] pr-6">
+            <span
+              class="links text-gray-600 text-xs hover:underline cursor-pointer"
+              >Terms</span
+            >
+            <div class="bullet text-gray-600 px-2 text-xs inline-block">•</div>
+            <span
+              class="links text-gray-600 text-xs hover:underline cursor-pointer"
+              >Privacy</span
+            >
+            <div class="bullet text-gray-600 px-2 text-xs inline-block">•</div>
+            <span
+              class="links text-gray-600 text-xs hover:underline cursor-pointer"
+              >Cookies</span
+            >
+            <div class="bullet text-gray-600 px-2 text-xs inline-block">•</div>
+            <span
+              class="links text-gray-600 text-xs hover:underline cursor-pointer"
+              >Accessibility</span
+            >
+            <div class="bullet text-gray-600 px-2 text-xs inline-block">•</div>
+            <span
+              class="links text-gray-600 text-xs hover:underline cursor-pointer"
+              >Ads Info</span
+            >
+            <div class="bullet text-gray-600 px-2 text-xs inline-block">•</div>
+            <span
+              class="links text-gray-600 text-xs hover:underline cursor-pointer"
+              >More</span
+            >
+            <div class="bullet text-gray-600 px-2 text-xs inline-block">•</div>
+            <span
+              class="links text-gray-600 text-xs hover:underline cursor-pointer"
+              >abcd</span
+            >
+            <div class="bullet text-gray-600 px-2 text-xs inline-block">•</div>
+            <span class="copyright text-gray-600 text-sm"
+              >&copy; 2026 X Corp</span
+            >
+          </div>
+        </div>
+      </main>
     </div>
-    
-</body>
+  </body>
 </html>
