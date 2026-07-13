@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="./css/output.css" />
   </head>
   <body class="bg-black text-white">
@@ -95,7 +99,7 @@
             Post
           </button>
           <div
-            class="item hover:bg-gray-900 w-full py-4 rounded-full cursor-pointer flex justify-between"
+            class="item hover:bg-gray-900 w-full py-4 rounded-full cursor-pointer flex justify-between px-4"
           >
             <div class="flex justify-between gap-3">
               <img
@@ -105,11 +109,11 @@
               />
               <div>
                 <div class="topic font-semibold">Farha Shaikh</div>
-                <div class="niche text-sm text-gray-500">@farhashaikh</div>
+                <div class="niche text-sm text-gray-600">@farhashaikh</div>
               </div>
             </div>
             <span
-              class="material-symbols-outlined text-lg px-1 h-[26px] w-[26px] text-gray-500 hover:text-blue-500 hover:bg-blue-950 rounded-full"
+              class="material-symbols-outlined text-lg px-1 h-[26px] w-[26px] text-gray-600 hover:text-blue-500 hover:bg-blue-950 rounded-full ml-4"
             >
               more_horiz
             </span>
@@ -119,8 +123,209 @@
 
       <!-- middle section -->
       <main class="flex w-[80%]">
-        <div class="mid-section border border-x-gray-500 border-y-black w-3/5">
-          mid-section
+        <div
+          class="mid-section border border-x-gray-600 border-y-black w-3/5 bg-black"
+        >
+          <!-- top part -->
+          <div
+            class="top flex justify-between bg-black border border-x-black border-t-black border-b-gray-600 opacity-80"
+          >
+            <div
+              class="for-you w-1/2 flex items-center justify-between h-[55px] flex-col hover:bg-gray-900 cursor-pointer"
+            >
+              <span class="my-auto">For you</span>
+              <div
+                class="custom-underline bg-blue-500 h-[4px] w-[55px] flex-end bottom-0 rounded-full"
+              ></div>
+            </div>
+            <div
+              class="following w-1/2 flex items-center justify-between h-[55px] flex-col hover:bg-gray-900 cursor-pointer"
+            >
+              <span class="my-auto">Following</span>
+              <div
+                class="custom-underline bg-blue-500 h-[4px] w-[55px] flex-end bottom-0 rounded-full hidden"
+              ></div>
+            </div>
+            <div class="flex self-center px-3">
+              <span
+                class="material-symbols-outlined text-lg px-1 h-[26px] w-[26px] text-gray-600 hover:text-blue-500 hover:bg-blue-950 rounded-full cursor-pointer"
+              >
+                add
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="whats-happening flex gap-4 px-4 pt-4 pb-2 border border-b-gray-600 border-x-black border-t-black"
+          >
+            <img
+              class="w-[40px] h-[40px] rounded-full"
+              src="Normal pfp🎀.jpg"
+              alt="empty profile picture"
+            />
+            <div class="input-field py-1 w-full">
+              <input
+                type="text"
+                placeholder="What's happening?"
+                class="text-xl bg-black outline-none w-full pl-1"
+              />
+
+              <div
+                class="everyone-can-reply inline-flex items-center text-blue-500 hover:bg-blue-950/55 hover:rounded-full cursor-pointer mt-4 mb-4 pl-1 pb-1 pr-2"
+              >
+                <span
+                  class="material-symbols-outlined text-lg px-1 h-[26px] w-[26px]"
+                >
+                  globe
+                </span>
+                <span>Everyone can reply</span>
+              </div>
+              <hr class="border-[1px] border-gray-600" />
+              <div
+                class="post-and-more cursor-default pt-2 flex justify-between"
+              >
+                <div>
+                  <span
+                    class="material-symbols-outlined text-2xl px-2 py-1 mx-1 text-gray-600 cursor-pointer hover:scale-110 hover:bg-gray-800 rounded-full hover:text-gray-400 duration-200"
+                  >
+                    image
+                  </span>
+                  <span
+                    class="material-symbols-outlined text-2xl px-2 py-1 mx-1 text-gray-600 cursor-pointer hover:scale-110 hover:bg-gray-800 rounded-full hover:text-gray-400 duration-200"
+                  >
+                    gif_box
+                  </span>
+                  <span
+                    class="material-symbols-outlined text-2xl px-2 py-1 mx-1 text-gray-600 cursor-pointer hover:scale-110 hover:bg-gray-800 rounded-full hover:text-gray-400 duration-200"
+                  >
+                    ballot
+                  </span>
+                  <span
+                    class="material-symbols-outlined text-2xl px-2 py-1 mx-1 text-gray-600 cursor-pointer hover:scale-110 hover:bg-gray-800 rounded-full hover:text-gray-400 duration-200"
+                  >
+                    sentiment_satisfied
+                  </span>
+                  <span
+                    class="material-symbols-outlined text-2xl px-2 py-1 mx-1 text-gray-600 cursor-pointer hover:scale-110 hover:bg-gray-800 rounded-full hover:text-gray-400 duration-200"
+                  >
+                    calendar_clock
+                  </span>
+                </div>
+
+                <button
+                  class="post text-black bg-white font-semibold text-xl rounded-full px-4 hover:bg-orange-50"
+                >
+                  Post
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="posted flex gap-3 px-4 pt-4 pb-2 border border-b-gray-600 border-x-black border-t-black"
+          >
+            <img
+              class="w-[40px] h-[40px] rounded-full"
+              src="image.png"
+              alt="empty profile picture"
+            />
+            <div
+              class="username-and-media w-full flex flex-col justify-between"
+            >
+              <div class="user-details flex w-full items-start justify-between cursor-pointer">
+                <div class="flex gap-1">
+                  <span class="username hover:underline font-bold"
+                    >blossom.</span
+                  >
+                  <i
+                    class="fa-solid fa-circle-check text-blue-500 flex pt-[6px]"
+                  ></i>
+                  <span class="user-id text-gray-600">@petalesblancs</span>
+                  <div
+                    class="bullet text-gray-600 text-xs inline-block pt-1"
+                  >
+                    •
+                  </div>
+                  <span class="date text-gray-600 hover:underline">Jul 11</span>
+                </div>
+
+                <div>
+                  <span
+                    class="material-symbols-outlined text-lg px-1 text-gray-600 hover:text-blue-500 hover:bg-blue-950 rounded-full flex self-end"
+                  >
+                    more_horiz
+                  </span>
+                </div>
+              </div>
+
+              <div class="media-container flex gap-[2px] pt-3">
+                <img
+                  src="https://pbs.twimg.com/media/HM4eP4kWkAAT0Ge?format=jpg&name=small"
+                  alt="sunset picture 1"
+                  class="w-1/2 rounded-l-xl"
+                />
+                <img
+                  src="https://pbs.twimg.com/media/HM4eP4kWkAAT0Ge?format=jpg&name=small"
+                  alt="sunset picture 2"
+                  class="w-1/2 rounded-r-xl"
+                />
+              </div>
+
+              <div
+                class="interactive-icon flex justify-between pt-2 text-gray-600"
+              >
+                <div
+                  class="comment-icon flex text-sm items-center hover:text-blue-500 cursor-pointer"
+                >
+                  <span
+                    class="material-symbols-outlined hover:bg-blue-950/30 duration-200 rounded-full px-2 py-2"
+                  >
+                    mode_comment
+                  </span>
+                  <span>3</span>
+                </div>
+
+                <div class="repost-icon flex text-sm items-center hover:text-green-500 cursor-pointer">
+                  <span
+                    class="material-symbols-outlined hover:bg-green-950/30 duration-200 rounded-full px-2 py-2"
+                  >
+                    repeat
+                  </span>
+                  <span>138</span>
+                </div>
+
+                <div class="like-icon flex text-sm items-center hover:text-pink-700 cursor-pointer">
+                  <span
+                    class="material-symbols-outlined hover:bg-pink-950/30 duration-200 rounded-full px-2 py-2"
+                  >
+                    favorite
+                  </span>
+                  <span>524</span>
+                </div>
+
+                <div class="views-icon flex text-sm items-center hover:text-blue-500 cursor-pointer">
+                  <span
+                    class="material-symbols-outlined hover:bg-blue-950/30 duration-200 rounded-full px-2 py-2"
+                  >
+                    bar_chart
+                  </span>
+                  <span>1.7k</span>
+                </div>
+
+                <div class="bookmark-and-share-icon flex text-sm items-center">
+                  <span
+                    class="material-symbols-outlined hover:bg-blue-950/30 duration-200 rounded-full px-2 py-2 hover:text-blue-500 cursor-pointer"
+                  >
+                    bookmark
+                  </span>
+                  <span
+                    class="material-symbols-outlined hover:bg-blue-950/30 duration-200 rounded-full px-2 py-2 hover:text-blue-500 cursor-pointer"
+                  >
+                    upload
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- right section -->
@@ -129,22 +334,22 @@
           <div class="search">
             <input
               type="text"
-              class="w-[90%] rounded-full p-2 bg-black px-4 border-2 border-gray-500 focus:border-blue-500 focus:outline-none"
+              class="w-[90%] rounded-full p-2 bg-black px-4 border-2 border-gray-600 focus:border-blue-500 focus:outline-none"
               placeholder="Search"
             />
           </div>
 
           <!-- what's happening -->
           <div
-            class="whats-happening text-white border border-gray-500 rounded-3xl w-[90%] flex flex-wrap pt-3"
+            class="whats-happening text-white border border-gray-600 rounded-3xl w-[90%] flex flex-wrap pt-3"
           >
             <h1 class="font-bold pb-3 px-4">What's happening</h1>
             <div class="item hover:bg-gray-900 w-full py-4 cursor-pointer px-4">
-              <div class="niche text-sm text-gray-500 flex justify-between">
+              <div class="niche text-sm text-gray-600 flex justify-between">
                 Business and Finance | Trending
                 <div>
                   <span
-                    class="material-symbols-outlined text-lg px-1 text-gray-500 hover:text-blue-500 hover:bg-blue-950 rounded-full"
+                    class="material-symbols-outlined text-lg px-1 text-gray-600 hover:text-blue-500 hover:bg-blue-950 rounded-full"
                   >
                     more_horiz
                   </span>
@@ -154,11 +359,11 @@
               <div class="topic font-semibold">#BestTimeToBuyS25Ultra</div>
             </div>
             <div class="item hover:bg-gray-900 w-full py-4 cursor-pointer px-4">
-              <div class="niche text-sm text-gray-500 flex justify-between">
+              <div class="niche text-sm text-gray-600 flex justify-between">
                 Sports | Trending
                 <div>
                   <span
-                    class="material-symbols-outlined text-lg px-1 text-gray-500 hover:text-blue-500 hover:bg-blue-950 rounded-full"
+                    class="material-symbols-outlined text-lg px-1 text-gray-600 hover:text-blue-500 hover:bg-blue-950 rounded-full"
                   >
                     more_horiz
                   </span>
@@ -167,11 +372,11 @@
               <div class="topic font-semibold">Gujrat ATS</div>
             </div>
             <div class="item hover:bg-gray-900 w-full py-4 cursor-pointer px-4">
-              <div class="niche text-sm text-gray-500 flex justify-between">
+              <div class="niche text-sm text-gray-600 flex justify-between">
                 Trending in India
                 <div>
                   <span
-                    class="material-symbols-outlined text-lg px-1 text-gray-500 hover:text-blue-500 hover:bg-blue-950 rounded-full"
+                    class="material-symbols-outlined text-lg px-1 text-gray-600 hover:text-blue-500 hover:bg-blue-950 rounded-full"
                   >
                     more_horiz
                   </span>
@@ -188,7 +393,7 @@
 
           <!-- who to follow -->
           <div
-            class="who-to-follow text-white border border-gray-500 rounded-3xl w-[90%] flex flex-wrap pt-3"
+            class="who-to-follow text-white border border-gray-600 rounded-3xl w-[90%] flex flex-wrap pt-3"
           >
             <h1 class="font-bold pb-3 px-4">Who to follow</h1>
             <div
@@ -204,7 +409,7 @@
                   <div class="topic font-semibold hover:underline decoration-1">
                     Elad Gil
                   </div>
-                  <div class="niche text-sm text-gray-500">@eladgil</div>
+                  <div class="niche text-sm text-gray-600">@eladgil</div>
                 </div>
               </div>
               <button
@@ -227,7 +432,7 @@
                   <div class="topic font-semibold hover:underline decoration-1">
                     Garden
                   </div>
-                  <div class="niche text-sm text-gray-500">@gardenofcolors</div>
+                  <div class="niche text-sm text-gray-600">@gardenofcolors</div>
                 </div>
               </div>
               <button
@@ -250,7 +455,7 @@
                   <div class="topic font-semibold hover:underline decoration-1">
                     Greg Brockman
                   </div>
-                  <div class="niche text-sm text-gray-500">@gdb</div>
+                  <div class="niche text-sm text-gray-600">@gdb</div>
                 </div>
               </div>
               <button
