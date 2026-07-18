@@ -1329,6 +1329,21 @@ video {
     padding-bottom: 0.5rem;
   }
 
+  .lg\:px-\[100px\] {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .lg\:px-\[80px\] {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .lg\:px-\[60px\] {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
   .lg\:pl-1 {
     padding-left: 0.25rem;
   }
